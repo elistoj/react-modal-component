@@ -1,18 +1,21 @@
-# React Modal Component
-
+React Modal Component
 A simple and accessible React modal component.
 
-## Installation
-
+Installation
 You can install the package using npm or yarn:
 
-```bash
+
 npm install react-modal-component-eli-ca
 
 # or via yarn:
 yarn add react-modal-component-eli-ca
 
-Usage:
+
+Description
+
+The React Modal component is designed to be simple and accessible. It allows you to create customizable modal windows that are easy to integrate into your React projects. The component handles opening and closing of the modal, as well as user interactions smoothly. With default styles and customization options, you can adapt it to your specific needs.
+
+Usage
 
 import React, { useState } from 'react';
 import Modal from 'react-modal-component-eli-ca'; 
@@ -55,11 +58,15 @@ const CreateEmployee = () => {
 export default CreateEmployee;
 
 Props
+
 isOpen (boolean): Controls whether the modal is open or closed. Required.
 onClose (function): Function to call when the modal needs to be closed. Triggered when the user clicks the overlay or the close button. Required.
 children (node): The content to be displayed inside the modal. Required.
 
-Styles:
+
+Styles
+
+
 
 .modal-overlay {
     position: fixed;
@@ -104,5 +111,7 @@ Styles:
 .modal-close:hover {
     background: #444;
 }
+
+
 License
 This project is licensed under the MIT License. See the LICENSE file for details.

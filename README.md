@@ -4,19 +4,18 @@ A simple and accessible React modal component.
 
 ## Installation
 
+You can install the package using npm or yarn:
+
 ```bash
-npm install react-modal-component
+npm install react-modal-component-eli-ca
 
-or via yarn:
+# or via yarn:
+yarn add react-modal-component-eli-ca
 
-yarn add react-modal-component
-
-
-
-Usage
+Usage:
 
 import React, { useState } from 'react';
-import Modal from 'your-modal-package-name';  // Replace with your actual package name
+import Modal from 'react-modal-component-eli-ca'; 
 
 const CreateEmployee = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -56,41 +55,54 @@ const CreateEmployee = () => {
 export default CreateEmployee;
 
 Props
-isOpen (boolean)
-Description: Controls whether the modal is open or closed.
-Required: Yes
-onClose (function)
-Description: Function to call when the modal needs to be closed. It’s triggered when the user clicks the overlay or the close button.
-Required: Yes
-children (node)
-Description: The content to be displayed inside the modal.
-Required: Yes
+isOpen (boolean): Controls whether the modal is open or closed. Required.
+onClose (function): Function to call when the modal needs to be closed. Triggered when the user clicks the overlay or the close button. Required.
+children (node): The content to be displayed inside the modal. Required.
 
+Styles:
 
-CSS Styles
-The modal component includes basic styles by default. You can customize these styles by targeting the following CSS classes:
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-.modal-overlay
-.modal-content
-.modal-close
- 
- Modal Import: The Modal component is imported from the package where it’s published.
-State Management: isModalOpen state is used to control the visibility of the modal.
-Modal Usage: The Modal component is used with isOpen and onClose props to manage its visibility. When the "Save" button is clicked, the modal opens, and it closes when the close button inside the modal is clicked.
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
 
+.modal-close {
+    position: absolute;
+    top: -30px;
+    right: -15px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modal-close:hover {
+    background: #444;
+}
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contribution
-Feel free to open issues or submit pull requests to improve the component.
-
- 
-
-### Key Points
-- **Installation**: Guides users on how to install the component via npm.
-- **Usage**: Provides an example of how to integrate the modal component into a React application.
-- **Props**: Details the props that the `Modal` component accepts, including `isOpen`, `onClose`, and `children`.
-- **CSS Styles**: Offers basic styles that can be used or customized for the modal.
-- **License and Contribution**: Encourages contributions and clarifies the licensing of the component.
-
-This `README.md` should give users all the information they need to effectively use and integrate your `Modal` component in their projects.

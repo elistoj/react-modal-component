@@ -8,10 +8,10 @@ A simple and accessible React modal component.
 You can install the package using npm or yarn:
 
 
-npm install react-modal-component-eli-ca
+npm install react-modal-component-eli
 
 # or via yarn:
-yarn add react-modal-component-eli-ca
+yarn add react-modal-component-eli
 
 
 # Description

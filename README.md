@@ -1,4 +1,6 @@
 React Modal Component
+
+
 A simple and accessible React modal component.
 
 Installation

@@ -20,9 +20,9 @@ The React Modal component is designed to be simple and accessible. It allows you
 
 # Usage
 
+
 import React, { useState } from 'react';
 import Modal from 'react-modal-component-eli-ca'; 
-
 const CreateEmployee = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 

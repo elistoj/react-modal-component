@@ -5,10 +5,10 @@ Installation
 You can install the package using npm or yarn:
 
 
-npm install react-modal-component-eli-ca
+npm install react-modal-component-eli
 
 # or via yarn:
-yarn add react-modal-component-eli-ca
+yarn add react-modal-component-eli
 
 
 Description
@@ -18,7 +18,7 @@ The React Modal component is designed to be simple and accessible. It allows you
 Usage
 
 import React, { useState } from 'react';
-import Modal from 'react-modal-component-eli-ca'; 
+import Modal from 'react-modal-component-eli'; 
 
 const CreateEmployee = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
